@@ -1,0 +1,24 @@
+body {
+    background-image: linear-gradient(to left,rgb(72, 182, 233),grey);
+}
+
+h1 {
+    background-color:rgba(95, 39, 185, 0.897);
+    color:rgb(90, 221, 149);
+    text-align: center;
+}
+
+h2 {
+    background-color:rgba(79, 151, 209, 0.5);
+    text-align:center;
+}
+
+main {
+    background-color:rgb(90, 221, 149);
+    border-radius: 10px;
+    color:rgb(4, 48, 33);
+}
+p {
+    text-align: center;
+    color:blueviolet
+}

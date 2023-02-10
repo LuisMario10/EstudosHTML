@@ -1,0 +1,24 @@
+
+body {
+    background-image: linear-gradient(to left, #a0f593 , #82c4ff , 
+    #4449F2 80%);
+}
+main {
+    background-color: #D1F2C7;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(60, 126, 85);
+}
+
+
+h1 {
+    background-color: #5B80EB;
+    color: #490381;
+
+}
+
+h2 {
+    color:#02079b
+}
+p {
+    color: #155FEB;
+}

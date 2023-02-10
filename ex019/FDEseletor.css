@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(158, 230, 174);
+}
+
+h1 {
+    background-color:rgb(172, 240, 140);
+    color:rgb(108, 133, 17);
+    text-align: center;
+    font-size: 50px;
+}
+
+h1#principal {
+    background-color:rgb(104, 228, 120)
+}
+h1#p2 {
+    background-color: yellowgreen
+}
+
+h1#p3 {
+    background-color:rgb(49, 211, 143)
+}
+
+h1#p4 {
+    background-color:rgb(84, 114, 56)
+}
+
+.sub1 {
+    color:rgb(1, 107, 10)
+}
+
+.sub2 {
+    color:rgb(50, 104, 50)
+}

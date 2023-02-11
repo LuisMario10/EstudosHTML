@@ -124,9 +124,20 @@ main img.pequena {
     margin: auto;
 }
 
-aside ul {
-    background-color:#000000;
-    list-style-type: '\2714\00A0\00A0';
+aside {
+    background-color:#83e1ad;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside > h3 {
+    background-color:#063d1e;
+    border-radius: 10px 10px 0px 0px;
+    margin: -10px -10px 10px;
+
+}
+aside > ul {
+    list-style-type: '\2714';
     list-style-position: inside;
     columns: 2;
 }
@@ -155,16 +166,28 @@ div.video > iframe {
 
 footer p {
     border-radius: 0px 0px 20px 20px;
-    padding: 10px;
-    margin-top: -50px;
-    margin-bottom: 10px;
+    display: block;
+    
+
 }
 
 footer {
-    margin-left: 153px;
-    margin-right: 153px;
-    border-radius: 0px 0px 10px 10px;
+
+    text-align: center;
+    margin-top:-30px;
+   
+    margin-left: 180px;
     box-shadow:rgba(0, 0, 0, 0.705);
     background-color:var(--cor5);
     color: white;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color:var(--cor1);
+    font-weight: bolder;
+
 }

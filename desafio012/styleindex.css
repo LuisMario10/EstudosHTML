@@ -67,14 +67,28 @@ section.normal {
 section.imagem {
     background-color: rgb(80, 80, 80);
     color: white;
+    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.767);
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.281);
+    background-color: rgba(0, 0, 0, 0.589);
     padding: 5px;
+    text-shadow: 1px 1px 0px black; 
 }
 
+section#img01 {
+    background-image: url('imagens/background001.jpg');
+    background-position: right;
+   
+}
+
+section#img02 {
+    background-image: url('imagens/background002.jpg');
+    background-position: right center;
+   
+}
 footer {
     background-color: black;
     color: white;

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas com dados reais</title>
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+        table {
+            border-collapse: collapse;
+            
+        }
+
+        thead {
+            background-color:rgba(102, 100, 100, 0.466)
+        }
+
+        capition {
+            background-color: rgba(59, 56, 56, 0.836);
+            color: white;
+            font-size: 1.3em;
+
+        }
+        th, td {
+            border: 1px solid rgba(0, 0, 0, 0.623);
+            padding: 10px;
+        }
+        tfoot {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas completas</h1>
+    <table>
+        <capition>Animes Favoritos</capition>
+        <thead>
+            <tr>
+                <th>Grupo</th>
+                <th>Nomes</th>
+                <th colspan="3">Animes</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th rowspan="3">Mulheres</th>
+            <td>Ana</td>
+            <td>Full Metal</td>
+            <td>Guren Lagan</td>
+            <td>One Piece</td>
+        </tr>
+        <tr>
+            <td>Bia</td>
+            <td>Black Clover</td>
+            <td>Mob</td>
+            <td>Bleach</td>
+        </tr>
+        <tr>
+            <td>Clara</td>
+            <td>Dbz</td>
+            <td>Naruto</td>
+            <td>Hunter x Hunter</td>
+        </tr>
+        <tr>
+            <th rowspan="3">Homens</th>
+            <td>Daniel</td>
+            <td>Madoca Magica</td>
+            <td>Ragnarok</td>
+            <td>School Days</td>
+        </tr>
+        <tr>
+            <td>Elizeu</td>
+            <td>My Hero Academia</td>
+            <td>One Punch Man</td>
+            <td>Re Zero</td>
+        </tr>
+        <tr>
+            <td>Fernando</td>
+            <td>Baki</td>
+            <td>Hippo</td>
+            <td>Super 11</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">Total</th>
+                <th>100%</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

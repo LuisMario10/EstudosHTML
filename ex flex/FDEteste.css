@@ -20,7 +20,7 @@ header {
 }
 
 header h1 a {
-    color: rgb(42, 194, 62);
+    color: rgb(175, 250, 172);
 }
 
 header a {
@@ -30,8 +30,47 @@ header a {
 
 .menu {
     display: flex;
-    background-color: rgba(19, 14, 14, 0.767);
+    background-color: rgb(5, 4, 4);
     font-size: 1,3em;
     padding: 15px;
+    margin-left: 10px;
+}
+
+.menu > li > a {
+    padding: 10px;
+}
+
+header > nav > ul > li > a:hover {
+    color: rgb(73, 207, 84);
+    font-weight: bolder;
+    background-color:rgb(22, 18, 18);
+    text-decoration: underline;
+    transition-duration: .5s;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div {
+    background-color:rgb(175, 250, 172);
+    margin: 30px;
+    padding: 10px;
+    
+}
+
+.partes {
+    border: 1px solid black;
+    padding: 20px;
     margin: 15px;
+}
+
+.produto {
+    max-width: 100%;
+    display: block;
+    padding: 40px;
+   
+   
 }

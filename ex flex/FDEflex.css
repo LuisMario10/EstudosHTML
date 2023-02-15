@@ -43,7 +43,7 @@ a {
     padding: 10px;
 }
 
-header > .menu >  a:hover {
+.menu > a:hover {
    font-weight: bolder;
    text-decoration: underline;
 }

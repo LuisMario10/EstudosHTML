@@ -1,76 +1,44 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1,2em;
-    list-style: none;
+    font-size: 1.2em
 }
 
-body { 
-    background-color: rgb(42, 175, 49);
-}
-
-header {
+.conteiner {
+    max-width: 500px;
+    height: 300px;
+    padding: 15px;
+    background-color: grey;
+    border: 2px solid black;
     display: flex;
-    background-color: black;
-    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px;
+    justify-content: space-around;
     align-items: center;
 }
 
-header h1 a {
-    color: rgb(175, 250, 172);
-}
-
-header a {
-    color: rgb(78, 190, 50);
-    text-decoration: none;
-}
-
-.menu {
-    display: flex;
-    background-color: rgb(5, 4, 4);
-    font-size: 1,3em;
-    padding: 15px;
-    margin-left: 10px;
-}
-
-.menu > li > a {
-    padding: 10px;
-}
-
-header > nav > ul > li > a:hover {
-    color: rgb(73, 207, 84);
-    font-weight: bolder;
-    background-color:rgb(22, 18, 18);
-    text-decoration: underline;
-    transition-duration: .5s;
-}
-
-section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-div {
-    background-color:rgb(175, 250, 172);
-    margin: 30px;
-    padding: 10px;
-    
-}
-
-.partes {
-    border: 1px solid black;
-    padding: 20px;
-    margin: 15px;
-}
-
 .produto {
-    max-width: 100%;
-    display: block;
-    padding: 40px;
-   
-   
+    background-color: #ffffff;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border: 2px solid black; 
+}
+
+.box {
+    background-color: #ffffff;
+    height: 80px;
+    border: 2px solid black;
+    flex-basis: 30px;
+}
+
+#item1 {
+    flex-grow: 2;
+}
+
+#item2 {
+    flex-basis: 300px;
+}
+
+#item1 {
+    order: 1;
 }

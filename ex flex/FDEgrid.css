@@ -1,0 +1,55 @@
+/* .conteiner {
+    background-color: rgb(192, 169, 169);
+    border: 3px solid black;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 50px auto 10%;
+    grid-template-rows: 70% 30%;
+    gap: 10px;
+    height: 35vh;
+}
+
+.conteiner div {
+    background-color: #af9f9f;
+    padding: 30px;
+    border: 1px solid rgb(0, 95, 51);
+    
+
+} */
+
+.conteiner {
+    background-color: rgb(192, 169, 169);
+    border: 3px solid rgb(135, 156, 12);
+    padding: 12px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    'cabecalho cabecalho cabecalho'
+    'sidebar corpo corpo'
+    'rodape rodape rodape';
+}
+
+#cabecalho {
+    grid-area: cabecalho;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    height: 30vh;
+}
+
+#corpo {
+    grid-area: corpo;
+    height: 30vh;
+}
+
+#rodape {
+    grid-area: rodape;
+    
+}
+.conteiner div {
+    background-color: #af9f9f;
+    padding: 30px;
+    border: 1px solid rgb(0, 95, 51);   
+
+}

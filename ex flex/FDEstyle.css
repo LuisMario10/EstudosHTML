@@ -22,9 +22,15 @@ header {
     align-items: center;
 }
 
+header h1 {
+    margin: 15px;
+}
+
 header nav {
     background-color: rgb(105, 142, 247);
-    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
     
 }
 
@@ -36,88 +42,93 @@ header nav a {
     font-weight: bold;
     color:rgb(146, 255, 219);
     padding: 10px;
-    margin: 5px;
+    margin: 2px;
+}
+
+.links{
+    flex-shrink: 2;
 }
 
 header nav a:hover {
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    border-radius: 5px;
     background-color:rgb(146, 255, 219);
     color:rgb(94, 132, 238);
-    font-weight: lighter;
     transition-duration: .5s;
 }
 
-.conteiner1 {
-    width: 100%;
-    height:auto;
-    margin: 10px;
-    background-color: rgb(174, 204, 243);
+.flex {
+    margin: 10px 10px 0px 10px;
+    padding: 10px;
+    background-color: rgb(131, 159, 236);
+    border-radius: 5px 5px 0px 0px;
+    min-height: 320px;
+    max-height: auto;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+   
 }
 
-.conteiner1 > .produtos1 {
-    border: 1px solid rgba(0, 0, 0, 0.596);
-    box-shadow: black;
-    height: 250px;
-    width: 325px;
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 10px;
+.itemflex {
+    background-color:rgb(195, 243, 227);
+    border: 1px solid rgb(94, 132, 238);
+    height: 300px;
+    flex-basis: 300px;
+    margin: 5px
 }
 
-.conteiner2 {
-    background-color: rgb(192, 169, 169);
-    border: 3px solid rgb(135, 156, 12);
-    padding: 12px;
+.grid {
+    margin: 0px 10px 3px 10px ;
+    padding: 10px;
+    background-color: rgb(131, 159, 236);
+    border-radius: 0px 0px 5px 5px;
+    min-height: 320px;
+    max-height: auto;
     display: grid;
-    gap: 10px;
-    grid-template-areas:
-    'item4 item4 item4 item6'
-    'item5 item5 item5 item6'
-    'item7 item7 item7 item6';
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+.itemgrid {
+    background-color: rgb(195, 243, 227);
+    border: 1px solid rgb(94, 132, 238);
+    height: 300px;
+    margin: 5px;
+}
+
+#prod1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+}
+
+#prod2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#prod3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+#prod5 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
    
-  
+
+.footer {
+    background-color: black;
+    color: white;
+}
+.footer h1 {
+    width: 100%;
 }
 
-#item4 {
-    grid-area: item4;
-}
-#item5 {
-    grid-area: item5;
-}
-#item6 {
-    grid-area: item6;
-    grid-row: 3;
-}
-#item7 {
-    grid-area: item7;
+.footer > #linha {
+    background-color: rgb(186, 204, 228);
+    font-size: 2px;
 }
 
-.conteiner2 > .produtos2 {
-    gap: 5px;
-    border-radius: 10px;
-    padding: 20px;
-    height: 80px;
-    background-color: white;
-}
-#item4 {
-    grid-area: item4;
-}
-
-#item5 {
-    grid-area: item5;
-}
-
-#item6 {
-    grid-area: item6;
-}
-
-#item7 {
-    grid-area: item7;
-}
-
-footer {
-   
-}

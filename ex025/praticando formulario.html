@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario teste</title>
+    <style>
+        @charset "UTF-8";
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: rgb(207, 255, 34);
+            
+        }
+
+        main {
+            position: relative;
+            height: 100vh;
+        }
+
+        .folha h1 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            background-color:rgb(253, 253, 40);
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .folha h2 {
+            text-align: center;
+            background-color: rgb(255, 208, 0);
+        }
+
+        .folha {
+            background-color:rgb(226, 248, 98);
+            border: 1px solid black;
+            border-radius: 15px;
+            box-shadow: 1px 3px 5px black;
+            width: 450px;
+            height: 610px;
+            position: absolute; 
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .folha p {
+            text-align: justify;
+            margin: 7px;
+        }
+
+        .folha form {
+            background-color: rgb(255, 255, 0);
+            border: 1px solid rgb(255, 166, 64);
+            border-radius: 0px 0px 5px 5px;
+            margin-top: 20px;
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+
+        .folha legend {
+            font-weight: bolder;
+            text-align: center;
+            background-color: rgb(255, 174, 0);
+            font-size: 1.2em;
+        }
+    </style>
+    <script>
+        function valida(f){
+            if(f.nome.value==""){
+                alert("O campo nome não pode ficar vazio!");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <div class="folha">
+            <h1>Formulario de Cadastro</h1>
+            <h2>ler com atenção!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sapiente velit unde laborum, quidem aperiam repellendus, eveniet, officiis vitae non eaque dolor qui id iusto. Id animi vel quaerat dolorem!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eum tempora qui et beatae minima magnam quaerat, at cum doloribus necessitatibus quidem exercitationem accusantium ducimus laudantium distinctio veritatis amet dolor!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugiat est delectus repellat, illum dignissimos ducimus accusantium consequuntur facilis accusamus tenetur aspernatur voluptas cupiditate, assumenda vitae dolores molestiae consecteturyj!
+            </p>
+            <form action="" method="post">
+                <legend>Cadastre-se aqui</legend>
+                <label for="nome">Nome:
+                    <input type="text" size="30" name="nome">
+                </label>
+                <label for="email">Email:
+                    <input type="text" size="30">
+                </label> <br>
+                <label for="sexo">Sexo</label><br>
+                <input type="radio" name="sexo" value="Masc"> Masculino
+                <input type="radio" name="Fem" value="Fem"> Feminino <br><br>
+                Quais destas frutas você gosta?<br>
+                <input type="checkbox" name="escolha1" value="banana"> Banana <br>
+                <input type="checkbox" name="escolha1" value="coco"> Côco<br>
+                <input type="checkbox" name="escolha1" value="manga"> Manga<br>
+                <input type="checkbox" name="escolha1" value="outra"> Maçã <br><br>
+                Estado:<select name="estado" id="estado">
+                    <option value="0">selecione</option>
+                    <option value="rj">RJ</option>
+                    <option value="sp">SP</option>
+                    <option value="mg">MG</option>
+                    <option value="rs">RS</option>
+                    <option value="outro">Outro</option>
+                </select> <br> <br>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

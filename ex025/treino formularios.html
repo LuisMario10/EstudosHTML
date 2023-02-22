@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario treino</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: green;
+            height: 100vh;
+            width: 100vw;;
+        }
+
+        .corpo {
+            position: relative;
+            height: 100vh
+        }
+        .container {
+            background-color: lightgreen;
+            width: 495px;
+            height: 587px;
+            margin-top: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.753);
+            border-radius: 8px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.822);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .container h1 {
+            background-color: rgb(7, 196, 7);
+            border-radius: 8px 8px 0px 0px;
+            text-align: center;
+        }
+        .container p {
+            text-align: justify;
+            margin: 5px 
+        }
+
+        .container form {
+            background-color: rgb(200, 241, 200);
+            border: 1px solid green;
+            height: 240px;
+            border-radius: 5px;
+            margin-left: 80px;
+            margin-right: 80px;
+            margin-top: 10px;
+        }
+
+        textarea {
+            margin-top: 15px;
+            margin-left: 45px
+        }
+
+    </style>
+    <script>
+        function valida(f){
+            if(f.nome.value==""){
+                alert("O campo nome não pode ficar vazio!");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <main class="corpo">
+        <div class="container">
+            <h1>leia o contrato para cadasto</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, ad aliquam reiciendis vitae maxime voluptate labore impedit eaque veniam quidem id facilis ipsa a excepturi libero. Quisquam officiis adipisci inventore!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut qui, eos ut maiores maxime, tempore dicta consequuntur delectus a neque! Quam pariatur natus voluptas consequuntur accusantium minima magni harum?
+            </p>
+            <form action="#" method="post" onsubmit="return valida(this);">
+                    <legend>Formulario de Cadastro</legend>
+                    <br>
+                    <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" size="30" maxlenght="100" name="nome">
+                    </p>
+                    <p>
+                    <label for="caixasenha">Senha:</label>
+                    <input type="password" size="20" maxlength="100" name="caixasenha">
+                    </p>
+                    <p>
+                    <label for="sexo">Sexo</label>
+                    <input type="radio" name="sexo" value="Masc" checked> Masculino
+                    <input type="radio" name="sexo" value="Fem"> Feminino
+                    </p>
+                    <p>
+                    Premio Desejado<br>
+                    (quanto mais premios mais desafios!):<br>
+                    <input type="checkbox" name="escolha1" value="radio" checked> Pc Gamer
+                    <br><input type="checkbox" name="escolha2" value="TV"> SmartTv
+                    <br><input type="checkbox" name="escolha2" value="TV"> Iphone 13
+                    </p>
+                    <p>
+                    Estado: 
+                    <select name="estado" id="estado">
+                        <option value="0">Selecione</option>
+                        <option value="rj">RJ</option>
+                        <option value="sp">SP</option>
+                        <option value="mg">MG</option>
+                        <option value="rs">RS</option>
+                        <option value="ba">BA</option>
+                        <option value="sc">SC</option>
+                        <option value="pa">PA</option>
+                        <option value="pr">PR</option>
+                        <option value="go">GO</option>
+                        <option value="df">DF</option>
+                        <option value="mt">MT</option>
+                        <option value="rn">RN</option>
+                        <option value="outro">Outro</option>
+                        <option value="fora">Fora do Pais</option>
+                    </select>
+                    </p>
+                    <p>
+                        <textarea name="areadetexto" id="" cols="30" rows="8"></textarea>
+                    </p>
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

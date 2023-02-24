@@ -1,5 +1,6 @@
 # EstudosHTML
- opa td bao zé 
+ opa td bao zé.
+ Estou a 1 mês aprendendo HTML e CSS
 
  <a href="https://luismario10.github.io/EstudosHTML/desafio%20010/desafiocev.html">Desafio 10 do Curso em Video</a>
 

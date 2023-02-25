@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries Intrnas nas CSS</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        html, body {
+            background-color: rgb(128, 120, 120);
+        }
+
+        .foto {
+            width: 400px;
+            height: 400px;
+        }
+        
+        @media screen and (orientation: portrait) {
+            .foto{ 
+                background-color: rgb(140, 138, 221);
+            }
+            
+        }
+
+        @media screen and (orientation: landscape) {
+            .foto {
+                width: 600px;
+                background-color: rebeccapurple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Queries nas CSS</h1>
+    <div class="foto">
+        
+    </div>
+</body>
+</html>

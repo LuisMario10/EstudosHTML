@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.foto {
+    background-color: rgb(133, 180, 72);
+    width: 1000px;
+    height: 300px;
+}
+
+.foto p {
+    color: rgb(255, 0, 0);
+}

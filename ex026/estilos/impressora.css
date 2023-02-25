@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+nav {
+    margin-bottom: 10px;
+}
+
+article::after {
+    content: ('site foi impresso por www.lxr.com');
+}

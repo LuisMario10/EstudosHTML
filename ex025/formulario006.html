@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Aprendendo Formularios com HTML</h1>
+    <form action="cadastro.js">
+        <label for="iest">Esatdo:</label>
+        <select name="est" id="iest">
+            <option value="" selected>---Escolha---</option>
+            <optgroup label="Região Sudeste">
+                <option value="rj">RJ</option>
+                <option value="sp">SP</option>
+                <option value="mg">MG</option>
+                <option value="es">ES</option>
+            </optgroup>
+
+            <optgroup label="Região Nordeste">
+                <option value="pb">PB</option>
+                <option value="rn">RN</option>
+                <option value="pe">PE</option>
+                <option value="ba">BA</option>
+                <option value="ce">CE</option>
+                <option value="ma">MA</option>
+            </optgroup>
+            <option value="outro">Outro</option>
+        </select>
+
+        <p><label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="adm">Administrador</option>
+                <option value="adivog">Advogado</option>
+                <option value="dev">Desenvolvedor</option>
+                <option value="eng">Engenheiro</option>
+            </datalist>
+        </p>
+        <p>
+            <textarea name="texto" id="itexto" cols="30" rows="10"></textarea>
+        </p>
+    </form>
+</body>
+</html>

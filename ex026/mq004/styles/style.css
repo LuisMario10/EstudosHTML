@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* Para todos os tipos de midia */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background: url(../imagens/back-phone.jpg) no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    background-color: rgb(135, 240, 121);
+    color: rgb(64, 0, 241);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    text-align: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.589);
+    border: 2px solid rgba(112, 111, 111, 0.877);
+}
+
+ 
+/* paisagem [tela deitada] */
+@media screen and (orientation: landscape) {  
+    div {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.822);
+        border: 2px solid black;
+        width: 400px;
+    }
+}
+#imgcel{display: block;}
+#imgtv {display: none;}
+#imgtab {display: none;}
+#imgimp {display: none;}
+#imgpc {display: none;}

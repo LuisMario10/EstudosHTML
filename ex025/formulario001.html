@@ -8,13 +8,15 @@
 </head>
 <body>
     <h1>Fazendo Formulario</h1>
-        <form action="cadastro.php" method="post" >
+        <form action="" method="post" autocomplete="on">
             <p><label for="inome">Nome</label>:
-                <input type="text" name="nome" id="inome"></p>
-            <p><label for="isobrenome">Sobrenome:</label>
-                <input type="text" name="Sobrenome" id="isobrenome">
+                <input type="text" name="nome" id="inome" placeholder="nome do usuario" autocomplete="username" required></p>
+
+            <p><label for="isenha">Senha:</label>
+                <input type="password" placeholder="senha de login" name="senha" id="isenha" maxlength="10" autocomplete="current-password" required>
             </p>
             <p>
+                <input type="reset" value="Limpar">
                 <input type="submit" value="Enviar">
             </p>
         </form>

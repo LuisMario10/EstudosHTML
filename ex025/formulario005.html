@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color, range e file em HTML </title>
+</head>
+<body>
+    <h1>Mais conteudo em input nos forms</h1>
+
+    <form action="cadastro.js" method="post">
+        <p><label for="icor">COR</label>
+            <input type="color" name="cor" id="icor">
+        </p>
+        <p><label for="inivel">Nivel</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="3">
+        </p>
+
+        <p><label for="ifile">File</label>
+        <input type="file" name="file" id="ifile"></p>
+        <p><input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>

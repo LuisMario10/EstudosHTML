@@ -22,8 +22,82 @@ main {
 }
 
 section {
+    box-shadow: 2px 2px 4px black;
     height: 300px;
-    background-color: rgb(184, 45, 91);
-    padding: 40px;
+    background-image: linear-gradient(to left, rgb(189, 77, 133), rgb(240, 40, 40));
+    margin-top: 150px;
     border-radius: 15px;
+    border: 1px solid black;
+    overflow: hidden;
 }
+
+.foto {
+    display: block;
+    height: 90px;
+    width: 350px;
+    background-image: url('../imagens/pexels-pascal-weiland-2244429.jpg');
+    background-repeat: no-repeat;
+    background-position: left, center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.formulario {
+    display: block;
+}
+.formulario h1 {
+    border: 1px solid rgba(0, 0, 0, 0.664);
+    padding: 10px;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+.ola {
+    margin-top: 6px;
+}
+
+.ola,.dado {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);
+}
+
+.botoes {
+    text-align: center;
+}
+
+.botoes a {
+    margin-right: 10px;
+}
+
+.botoes input[type=submit] {
+    padding: 10px;
+    background-image: linear-gradient(to left,rgb(189, 77, 133), rgb(240, 40, 40));
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    box-shadow:1px 1px 2px rgb(0, 0, 0);
+}
+
+.botoes input[type=submit]:hover {
+    color: rgb(80, 4, 4);
+    padding: 11px;
+}
+
+.botoes a {
+    background-color: rgba(64, 19, 94, 0.692);
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+    color: rgb(252, 176, 176);
+    padding: 6px;
+    border: 1px solid black;
+}
+
+.botoes a:hover {
+    padding: 3px;
+}
+

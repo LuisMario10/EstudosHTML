@@ -6,26 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login teste</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-querie.css">
 </head>
 <body>
     <main>
         <section>
             <div class="foto">
-                <img src="" alt="">
+            <!-- aqui esta a imagem no CSS -->
             </div>
             <div class="formulario">
-                <h1>Login</h1>
-                <p>Olá, faça Login para acessar LXr News</p>
+                <h1>LOGIN TESTE</h1>
+                <p class="ola">Olá, faça Login para acessar LXr News</p> <br>
                 <form action="login.js" method="post">
-                    <label for="iemail">Email:</label>
-                    <input type="email" name="email" id="iemail">
+                    <div class="dado">
+                        <label for="iemail">Email:</label>
+                        <input type="email" name="email" id="iemail" autocomplete="email" required>
+                    </div>
+                    <div class="dado">
+                        <label for="isenha">Senha:</label>
+                        <input type="password" name="senha" id="isenha" autocomplete="current-password" required>
+                    </div>
+                    <br>
 
-                    <p><label for="isenha">Senha:</label>
-                    <input type="password" name="senha" id="isenha"></p>
-
-                    <p><input type="reset" value="Apagar tudo">
+                    <p class="botoes"><a href="#">esqueci a senha*</a>
                     <input type="submit" value="Entar"></p>
                 </form>
+                  feito por: luis mario
             </div>
         </section>
     </main>
